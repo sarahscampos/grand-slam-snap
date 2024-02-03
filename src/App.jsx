@@ -2,9 +2,11 @@ import styled from "styled-components"
 import EstilosGlobais from "./componentes/EstilosGlobais"
 import Cabecalho from "./componentes/Cabecalho"
 import BarraLateral from "./componentes/BarraLateral";
+import Banner from "./componentes/Banner";
+import bannerBackground from '/imagens/banner.png'
 // na interpolação de string é onde vai o código css
 const FundoGradiente = styled.div`
-  background: linear-gradient(174.61deg, #460891 4.16%, #5a09bd 48%, #790CFF 96.76%); 
+  background-color: #000000;
   width: 100%;
   min-height: 100vh;
 `;
@@ -16,6 +18,13 @@ function App() {
       <EstilosGlobais />
       <Cabecalho />
       <BarraLateral />
+      <Banner 
+        texto='A galeria mais
+        completa de 
+        fotos dos Grand Slams
+        femininos!'
+        backgroundImage={bannerBackground}
+      />
 
     </FundoGradiente>
   )
