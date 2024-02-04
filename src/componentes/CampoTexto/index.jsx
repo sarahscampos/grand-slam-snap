@@ -12,7 +12,7 @@ const CampoTextoEstilizado = styled.input`
     border-radius: 10px;
     border: 2px solid;
     border-color: #C98CF1;
-    background: #29282D;
+    background-color: #29282D;
     box-sizing: border-box;
     width: 566px;
     color: #D9D9D9;

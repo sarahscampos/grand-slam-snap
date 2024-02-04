@@ -1,0 +1,22 @@
+[
+    {
+        "id": 0,
+        "titulo": "Todas"
+    },
+    {
+        "id": 1,
+        "titulo": "Australian Open"
+    },
+    {
+        "id": 2,
+        "titulo": "Roland Garros"
+    },
+    {
+        "id": 3,
+        "titulo": "Wimbledon"
+    },
+    {
+        "id": 4,
+        "titulo": "US Open"
+    }
+]
