@@ -1,10 +1,13 @@
-import styled from "styled-components"
-import EstilosGlobais from "./componentes/EstilosGlobais"
-import Cabecalho from "./componentes/Cabecalho"
+import styled from "styled-components";
+import EstilosGlobais from "./componentes/EstilosGlobais";
+import Cabecalho from "./componentes/Cabecalho";
 import BarraLateral from "./componentes/BarraLateral";
 import Banner from "./componentes/Banner";
-import bannerBackground from '/imagens/banner.png'
+import bannerBackground from '/imagens/banner.png';
 import Galeria from "./componentes/Galeria";
+import fotos from './fotos.json';
+
+
 // na interpolação de string é onde vai o código css
 const FundoGradiente = styled.div`
   background-color: #0a0a0a;
