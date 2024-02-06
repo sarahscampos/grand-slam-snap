@@ -5,18 +5,22 @@
     },
     {
         "id": 1,
-        "titulo": "Australian Open"
+        "titulo": "Australian Open",
+        "tag": 1
     },
     {
         "id": 2,
-        "titulo": "Roland Garros"
+        "titulo": "Roland Garros",
+        "tag":2
     },
     {
         "id": 3,
-        "titulo": "Wimbledon"
+        "titulo": "Wimbledon",
+        "tag":3
     },
     {
         "id": 4,
-        "titulo": "US Open"
+        "titulo": "US Open",
+        "tag": 4
     }
 ]
