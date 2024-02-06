@@ -6,6 +6,8 @@ import Banner from "./componentes/Banner";
 import bannerBackground from '/imagens/banner.png';
 import Galeria from "./componentes/Galeria";
 import fotos from './fotos.json';
+import { useState } from "react";
+import ModalZoom from "./componentes/ModalZoom";
 
 
 // na interpolação de string é onde vai o código css
@@ -33,8 +35,9 @@ const ConteudoGaleria = styled.section`
   flex-grow: 1;
 `
 
-function App() {
-
+const App = () => {
+  const [fotosDaGaleria, setFotosDaGaleria] = useState(fotos)
+  const [fotoSelecionada, setFotoSelecionada] = useState(null)
   return (
     <FundoGradiente>
       <EstilosGlobais />
@@ -50,13 +53,20 @@ function App() {
               femininos!'
               backgroundImage={bannerBackground}
             />
-            <Galeria />
+            <Galeria 
+              fotos={fotosDaGaleria}
+              aoFotoSelecionada={foto => setFotoSelecionada(foto)}
+            />
           </ConteudoGaleria>
         </MainContainer>
       </AppContainer>
+      <ModalZoom 
+        foto={fotoSelecionada}
+        aoFechar={() => setFotoSelecionada(null)}
+      />
 
     </FundoGradiente>
   )
 }
 
-export default App
+export default App;
